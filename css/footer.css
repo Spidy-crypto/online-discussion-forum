@@ -1,0 +1,55 @@
+.foot{
+	height: 150px;
+	width: 100%;
+	background-color: #3c3c3c;
+	position: relative;
+}
+.foot h2{
+	color: #fff;
+}
+.subscribe{
+	margin-top: 40px;	
+	padding-top: 60px;
+	width: 50%;
+}
+.subscribe label{
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 100px;
+}
+.subscribe input[type="text"]{
+	margin-left: 10px;
+	border: none;
+	outline: none;
+	height: 30px;
+	font-size: 16px;
+	width: 300px;
+	border-bottom: 1px solid white;
+	box-sizing: border-box;
+	padding-left: 20px;
+	color: gray;
+}
+.subscribe input[type="button"]{
+	height: 32px;
+	color: white;
+	background-color: orange;
+	width: 80px;	
+}
+.foot li{
+	color: #fff;
+}
+::placeholder{
+	font-style: italic;
+	font-size: 15px;	
+}
+.follow{
+	width: 10%;
+	position: absolute;
+	right: 15%;
+	top: 3%;
+}
+.follow ul{
+	position: absolute;
+	right: 49%;
+	top: 50%;
+}
