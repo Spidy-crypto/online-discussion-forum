@@ -1,0 +1,60 @@
+.reg{
+			position: absolute;
+			top: 45%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			box-sizing: border-box;
+			width: 430px;
+			height: 590px;
+			padding: 20px 40px;
+			border-radius: 50px;
+			background: rgba(0,0,0,0.7);
+		}
+		h2{
+			text-align: center;
+			color: lightblue;
+		}
+		.reg label{
+			font-weight: bold;
+			color: #fff;
+		}
+		.reg input{
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		.reg input[type="text"],.reg input[type="email"],.reg input[type="password"]{
+			border:none;
+			outline: none;
+			height: 40px;
+			font size: 16px;
+			border-bottom: 1px solid #fff;
+			color: #fff;
+			background: transparent;
+		}
+		.reg input[type="submit"]{
+			border: none;
+			outline: none;
+			border-radius: 20px;
+			height: 40px;
+			font-size: 16px;
+			background : rgb(255,38,126);
+			cursor: pointer;
+		}
+		::placeholder{
+			color: #fff;
+			opacity: 0.4
+		}
+		.reg a:hover{
+			text-decoration: none;
+			color: red;x 
+		}
+		.reg a{
+			margin-left: 20px; 
+			font-weight: bold;
+			font-size: 14px;
+			color: #ffff;
+		}
+		#captcha{
+			margin-left: 30%;
+			width: 70%;
+		}
