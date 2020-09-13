@@ -1,44 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Registration</title>
-	<link rel="stylesheet" type="text/css" href="css/reg.css">
-	<style type="text/css">
-		body{
-			background-image: url("img/bg.jpg");
-			background-size: cover;
-			
-		}
-	</style>
-</head>
-<body>
-	<div class="reg">
-		<h2>Create New Account</h2>
-		<form action="login.html" id="regform">
-			<label for="firstname">FirstName</label><br>
-			<input type="text" name="firstname" id="firstname" required placeholder="Enter FirstName" autocomplete ><br>
-			<label for="lastname">LastName</label><br>
-			<input type="text" name="lastname" id="lastname" required placeholder="Enter LastName" autocomplete><br>
-			<label for="email">EmailId</label><br>
-			<input type="email" name="email" id="email" required placeholder="Enter email" autocomplete><br>
-			<label for="password">Password</label><br>
-			<input type="password" name="password" id="password" required placeholder="Enter Password"><br>
-			<label for="repassword">Confirm Password</label><br>
-			<input type="password" name="repassword" id="repassword" required placeholder="Confirm password"><br>
-			<span ><label for="captcha" style="margin-left: 30%;">Captcha</label><br>
-			<input type="text" name="captcha" id="captcha" required placeholder="Enter Captcha" autocomplete><br>	
-			</span>
-			<input type="submit" name="submit1" value="submit">
-		</form>
-		<footer>
-			<a href="#">Already have an account ?</a>
-		</footer>
-	</div>
-	<div>
-		<p id="abc"></p>
-	</div>
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<script src="js/apply.js"></script>
 
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="css/reg.css">
+    <style type="text/css">
+    body {
+        background-image: url("img/bg.jpg");
+        background-size: cover;
+
+    }
+    </style>
+</head>
+
+<body>
+    <div class="reg">
+        <h2>Create New Account</h2>
+        <form action="login.html" id="regform">
+            <label for="firstname">FirstName</label><br>
+            <input type="text" name="firstname" id="firstname" required placeholder="Enter FirstName" autocomplete><br>
+            <label for="lastname">LastName</label><br>
+            <input type="text" name="lastname" id="lastname" required placeholder="Enter LastName" autocomplete><br>
+            <label for="email">EmailId</label><br>
+            <input type="email" name="email" id="email" required placeholder="Enter email" autocomplete><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password" required placeholder="Enter Password"><br>
+            <label for="repassword">Confirm Password</label><br>
+            <input type="password" name="repassword" id="repassword" required placeholder="Confirm password"><br>
+            <input type="submit" name="submit1" value="submit">
+        </form>
+        <footer>
+            <a href="login.html">Already have an account ?</a>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/apply.js"></script>
 </body>
+
 </html>

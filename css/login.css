@@ -4,16 +4,17 @@
 	left: 50%;
 	transform: translate(-50%,-50%);
 	width: 350px;
-	height: 420px;
-	padding: 60px 40px;
+	height: 400px;
+	padding: 20px 40px;
 	box-sizing: border-box;
 	border-radius: 50px;
-	background: rgba(0,0,0,0.8);
+	background: rgba(255,255,255,0.95);
+	box-shadow: 1px,0px,5px,lightgray;
 }
 .login label{
 	padding: 0;
 	font-weight: bold;	
-	color: #fff;
+	color: rgb(0,0,0);
 }
 .login input{
 	width: 100%;
@@ -21,12 +22,12 @@
 }
 .login input[type="text"],.login input[type="password"]{
 	border: none;
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid black;
 	height: 40px;
 	font-size: 16px;
 	outline: none;
 	background: transparent;
-	color: #fff;
+	color: black;
 }
 .login input[type="submit"]{
 	outline: none;
@@ -39,18 +40,21 @@
 	border: none;
 }
 ::placeholder{
-	color: rgba(255,255,255,.4);
+	color: rgba(0,0,0,0.4);
 }
 .login a:hover{
 	text-decoration: none;
-	color: red;x 
+	color: red;
 }
 .login a{
 	font-weight: bold;
 	font-size: 14px;
-	color: #ffff;
+	color: black;
+	text-decoration: none;
+	margin-bottom: 10px;
 }
 h2{
 	text-align: center;
-	color: lightblue ;
+	color: black;
+	margin-bottom: 30px;	
 }

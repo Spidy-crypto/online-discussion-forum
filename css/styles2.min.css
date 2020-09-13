@@ -1,6 +1,6 @@
 .footer-basic {
     padding: 40px 0;
-    background-color: #f2f2f2;
+    background-color: #fff;
     color: #4b4c4d
 }
 
@@ -57,97 +57,73 @@
     color: #aaa;
     margin-bottom: 0
 }
-
-#sidebar {
-    width: 0%;
-    visibility: hidden
-}
-
-#articles {
-    padding-top: 20px;
-    width: 100%;
-    background: #fff;
-    box-shadow: 1px 2px 3px #d3d3d3
-}
-
-#user-img {
+#logo {
     width: 50px;
-    height: 50px;
-    border-radius: 48px
+    height: 50px
 }
 
-#name {
-    margin-left: 9px;
-    position: relative
-}
-
-#username {
-    color: #000;
-    text-decoration: none
-}
-
-#do {
-    font-size: 14px;
-    color: #40484f;
-    width: 50%
-}
-
-#dots {
-    position: absolute;
-    top: 10px;
-    right: 5px;
-    font-size: 28px;
-    color: #748fab;
-    margin-right: 10px
-}
-
-#article {
+#first-image {
     width: 100%;
-    margin: auto
-}
-
-#art-par {
-    text-indent: 50px;
-    text-align: justify;
-    margin-left: 10px;
-    margin-right: 10px
-}
-
-#art-image {
-    width: 97%;
+    height: 650px;
     display: block;
     margin-left: auto;
     margin-right: auto
 }
 
-#bottom {
-    height: 33px;
-    margin-top: 5px;
+@media (min-width:992px) {
+    #first-image {
+        width: 60%;
+        height: 710px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: -1
+    }
+}
+
+#first-div {
     position: relative
 }
 
-#bootom-icon {
-    font-size: 28px;
-    margin-left: 10px
-}
-
-.bookmark {
+#second-par {
+    font-size: 21px;
+    text-align: center;
+    color: #2d4052;
     position: absolute;
-    right: 2.6%
+    top: 80%;
+    width: 100%;
+    font-style: italic;
+    font-family: oxygen;
+    font-weight: 400px
 }
 
-#users {
-    margin-left: 10px
+#fisrt-par {
+    font-size: 23px;
+    text-align: center;
+    color: #2d4052;
+    font-weight: 400px;
+    font-style: italic;
+    font-family: oxygen;
+    margin-bottom: 0;
+    margin-top: -85px
 }
 
-#side-link {
-    margin: 5px
+#button {
+    background: #000;
+    border-color: #ff0;
+    border-width: 1px;
+    margin: 20px;
+    width: 120px
 }
 
-#navbar {
-    opacity: .92;
-    background: #f8f8f8;
-    box-shadow: 1px 1px #d3d3d3
+@media (min-width:576px) {
+    #button {
+        background: #000;
+        border-color: #ff0;
+        border-width: 1px;
+        margin: 20px;
+        width: 150px
+    }
 }
 
 .navigation-clean {
@@ -156,7 +132,7 @@
     padding-bottom: .75rem;
     color: #333;
     border-radius: 0;
-    box-shadow: none;
+    box-shadow: 0 3px 10px 2px #bebebe;
     border: none;
     margin-bottom: 0
 }
@@ -300,65 +276,24 @@
     }
 }
 
-#role {
-    background: #fff
-}
-
-#head-role {
-    color: #6788a9;
-    margin-top: 27px;
-    margin-left: 19px;
-    margin-bottom: 16px
-}
-
 #icon {
     margin-top: 32px
 }
 
-#par-role {
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-right: 20px;
-    text-align: justify;
-    text-indent: 50px;
-    margin-bottom: 0;
-    margin-top: -1px
-}
-
-.location {
-    margin-top: 0;
-    padding-bottom: 10px
-}
 
 @media (min-width:768px) {
-    #sidebar {
-        width: 25%;
-        position: sticky;
-        visibility: visible
-    }
-
-    #articles {
-        padding-top: 20px;
-        width: 75%;
-        background: #fff
-    }
-
-    .bottom {
-        margin-left: 25%
-    }
-
     .navigation-clean {
         padding-top: 1rem;
-        padding-bottom: 1rem
+        padding-bottom: 1rem;
+        box-shadow: 0 3px 10px 2px #bebebe;
+        opacity: .95
     }
 
     .navigation-clean .navbar-nav .show .dropdown-menu {
         box-shadow: 0 4px 8px rgba(0, 0, 0, .1)
     }
-
-    #role {
-        width: 80%;
-        margin: auto;
-        background: #fff
-    }
 }
+
+::-webkit-scrollbar {
+            display: none;
+        }
