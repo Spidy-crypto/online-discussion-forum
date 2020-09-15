@@ -156,7 +156,7 @@
     padding-bottom: .75rem;
     color: #333;
     border-radius: 0;
-    box-shadow: none;
+    box-shadow: 0 3px 10px 2px #bebebe;
     border: none;
     margin-bottom: 0
 }
@@ -361,4 +361,40 @@
         margin: auto;
         background: #fff
     }
+}
+
+.see {
+    background: #000;
+    border-color: #ff0;
+    margin: 50px 0 0 50px
+}
+
+.see:hover {
+    background-color: #000;
+    cursor: pointer;
+    border: #ff0
+}
+#search {
+    border-radius: 6px;
+    height: 40px;
+    margin-top: 3px;
+    width: 200px;
+    margin-left: 10px
+}
+
+.par {
+    margin-top: 10px;
+    width: 150pxpx
+}
+
+.search-div {
+    margin-top: 30px;
+}
+
+tr:nth-child(even){
+	background-color: #fcf7f1;
+}
+
+tr:hover{
+	background-color: #dddddd;
 }
