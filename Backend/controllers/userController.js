@@ -52,13 +52,13 @@ async function sendmail(data) {
       port: 587,
       secure: false,
       auth: {
-        user: 'rajkalathiya143@gmail.com', 
-        pass: '123456789R@j' 
+        user: 'Your email address', 
+        pass: 'Email password' 
       },
     });
 
     let info = await transporter.sendMail({
-      from: 'rajkalathiya143@gmail.com',
+      from: 'Your email address',
       to: data.email,
       subject: 'Otp',
       html: "<p>Thanks For registering</p>"+data.otp,
