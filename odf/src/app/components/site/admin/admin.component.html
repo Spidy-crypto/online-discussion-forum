@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="table-responsive table">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Owner</th>
+                    <th>Name</th>
+                    <th>Id</th>
+                    <th>Delete Forum</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let d of data" >
+                    <td>{{d.email}}</td>
+                    <td>{{d.forumname}}</td>
+                    <td >{{d.forumid}}</td>
+                    <td><a class="btn delete-btn" (click)= "remove(d.forumid)">Delete</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

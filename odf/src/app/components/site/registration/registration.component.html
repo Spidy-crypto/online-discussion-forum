@@ -1,0 +1,21 @@
+<div class="body">
+    <div class="reg">
+        <h2>Create New Account</h2>
+        <form action="login" method="post" (ngSubmit)="register($event)" [formGroup]="registerForm">
+            <label for="firstname">FirstName</label><br>
+            <input type="text" name="firstname" id="firstname" placeholder="Enter FirstName" formControlName="firstname"><br>
+            <label for="lastname">LastName</label><br>
+            <input type="text" name="lastname" formControlName="lastname" id="lastname" placeholder="Enter LastName" autocomplete><br>
+            <label for="email">EmailId</label><br>
+            <input type="email" name="email" formControlName="email" id="email" placeholder="Enter email" autocomplete><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password" formControlName="password" placeholder="Enter Password"><br>
+            <label for="repassword">Confirm Password</label><br>
+            <input type="password" name="repassword" id="repassword" formControlName="repassword" placeholder="Confirm password"><br>
+            <input type="submit" name="submit1" value="submit">
+        </form>
+        <footer>
+            <a routerLink="login">Already have an account ?</a>
+        </footer>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+tr:hover{
+    background-color: lightgray;
+}
+  
+.forum-name {
+    margin-left: 10px;
+}
+
+.container{
+    min-height: 63vh;
+}
+
+.delete-btn {
+    margin-left: 10px;
+    background: #000;
+    border-color: #ff0;
+    border-width: 1px;
+    width: 120px;
+    color: white;
+}
+
+.delete-btn:hover{
+    color: white;
+}

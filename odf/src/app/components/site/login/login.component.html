@@ -1,0 +1,16 @@
+<div class="body">
+    <div class="login">
+        <h2>Log In Here</h2>
+        <form [formGroup]="loginForm" (ngSubmit)="login($event)">
+            <label for="username">Username :- </label>
+            <input type="text" formControlName="username" name="username" id="username" placeholder="Enter Email"><br>
+            <label for="password">Password :- </label><br>
+            <input type="password" formControlName="password" id="password" name="pass" placeholder="Enter Your password"><br>
+            <input type="submit" name="submit" value="LogIn">
+        </form>
+        <footer>
+            <a routerLink="/registration">Register new account</a><br>
+            <a routerLink="#">Forget Password</a>
+        </footer>
+    <div>
+</div>

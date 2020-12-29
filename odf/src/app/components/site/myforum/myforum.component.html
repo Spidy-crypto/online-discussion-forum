@@ -1,0 +1,32 @@
+<div class="container">
+    <button class="btn create-button Show_name" style="width: auto;">Create New Forum</button>
+    <button class="btn create-button Show_Id" style="width: auto;">Join New Forum</button>
+    <div class="wrap-name" id="wrap_name">
+        <label for="forumname">Forum Name :-</label>
+        <input type="text" #name  class="forum-name" name="forumname" placeholder="Enter Name" />
+        <button class="btn create-button"  (click)="create(name)" type="button">Create</button>
+    </div>
+    <div class="wrap-name" id="wrap_id">
+        <label for="forumid">Forum Id :-</label>
+        <input type="text" #id class="forum-name" name="forumid" placeholder="Enter Id" />
+        <button class="btn create-button" (click) = "join(id)" type="button">Join</button>
+    </div>
+    <div class="table-responsive table">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Keys</th>
+                    <th>Want to Leave ?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let forum of forums">
+                    <td><a routerLink="/discuss/{{forum.forumid}}">{{forum.forumname}}</a></td>
+                    <td>{{forum.forumid}}</td>
+                    <td><button class="btn create-button" type="button" id="leave" (click) = "leave(forum.forumid)">leave</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

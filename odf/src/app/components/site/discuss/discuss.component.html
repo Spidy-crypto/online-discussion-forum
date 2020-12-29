@@ -1,0 +1,15 @@
+<div class="container">
+    <p class="text-center forumname">{{forumname}}</p>
+    <hr/>
+    <div *ngFor = " let discuss of discussion" class="wrap-message">
+        <p class="name">
+            <span>{{discuss.firstname}} {{discuss.lastname}}</span>
+            <span class="email">{{discuss.email}}</span>
+        </p>
+        <p class="messege">{{discuss.msg}}</p>
+    </div>
+    <div class="form-group">
+        <textarea class="form-control" #message placeholder="Enter Your Messege" rows="7" ></textarea>
+        <a class="btn" type="button" (click) = "sendMessege(message)">Send</a>
+    </div>
+</div>
