@@ -22,7 +22,3 @@ You need to copy this 2 folder in your system.
 1. Install Angular, Node, mongodb
 2. Add your email-id and password in usercontroller.js and allow less security to your account to send email while registration.
 
-
-# Screenshot
-
-![not found]()
